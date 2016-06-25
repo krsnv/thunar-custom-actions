@@ -1,0 +1,9 @@
+# This file is a list of one-line commands for Thunar Custom Actions.
+# Just create new action, add one of the line to exec input and save it.
+
+# Upload selected file to Yandex.Disk
+curl --user "<yandex_user>":"<yandex_pass>" -T %f https://webdav.yandex.ru/
+
+# Get total size of selected directory.
+# Needs ncdu be installed: sudo apt-get install ncdu
+exo-open --launch TerminalEmulator "ncdu %f"
