@@ -32,3 +32,6 @@ unoconv -f pdf %F
 
 # Print selected file
 lp %f
+
+# Convert markdown file to HTML
+pandoc %f -o %f.html
