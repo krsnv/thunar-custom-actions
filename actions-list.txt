@@ -7,3 +7,28 @@ curl --user "<yandex_user>":"<yandex_pass>" -T %f https://webdav.yandex.ru/
 # Get total size of selected directory.
 # Needs ncdu be installed: sudo apt-get install ncdu
 exo-open --launch TerminalEmulator "ncdu %f"
+
+# Move all files from subdirectories to top directory
+find . -mindepth 2 -type f -exec mv "{}" . \; && find . -type d -empty -delete
+
+# Rename selected files to low-case
+for file in %N; do mv "$file" "$(echo "$file" | tr '[:upper:]' '[:lower:]')"; done
+
+# Replace spaces and change file names low-case
+for file in %N; do mv "$file" "$(echo "$file" | tr -s ' ' | tr ' A-Z' '-a-z' | tr -s '-' | tr -c '[:alnum:][:cntrl:].' '-')"; done
+
+# Compare selected files or directories using Meld
+# Needs meld be installed: sudo apt-get install meld
+meld %F
+
+# Convert PNG to JPG
+# Pattern: *.png
+convert %f -quality 75 %f.jpg
+
+# Export document to PDF
+# Pattern: *.doc;*.docx;*.odt;*.odp;*.pps;*.ppt;*.xls;*.xlsx;*.ods;*.pptx
+# Needs unoconv to be installed: sudo apt-get install unoconv
+unoconv -f pdf %F
+
+# Print selected file
+lp %f
