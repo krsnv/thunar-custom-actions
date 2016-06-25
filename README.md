@@ -6,10 +6,15 @@ My personal set of Thunar custom actions.
 
 * Scripts for custom actions
 * Icons for menus
+* One-line actions list file
 
 ## How to use it
 
-Comming soon...
+### Install all dependencies
+
+Install applications if need it.
+
+```sudo apt-get install ncdu zenity notify-send```
 
 
 
