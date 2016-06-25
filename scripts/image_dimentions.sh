@@ -1,6 +1,6 @@
 #!/bin/bash
 # ------------------------------------------------------------------------------
-# Script show notification with image Width and Height
+# Script shows notification with image Width and Height
 # Needs notify-send to be installed.
 # On Ubuntu run: sudo apt-get install notify-send
 # ------------------------------------------------------------------------------
