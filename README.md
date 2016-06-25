@@ -16,5 +16,16 @@ Install applications if need it.
 
 ```sudo apt-get install ncdu zenity notify-send```
 
+## About Thunar actions variables
 
+%f	The path to the first selected file
 
+%F	The paths to all the selected files
+
+%d	Directory containing the file referred to by %f
+
+%D	Directories containing the files referred to by %F
+
+%n	The first selected filename, without the path
+
+%N	All the selected filenames, without paths
