@@ -14,7 +14,7 @@ My personal set of Thunar custom actions.
 
 Install applications if need it.
 
-```sudo apt-get install ncdu zenity notify-send```
+```sudo apt-get install ncdu zenity notify-send unoconv meld```
 
 ## About Thunar actions variables
 
