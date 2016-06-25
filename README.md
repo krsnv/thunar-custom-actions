@@ -16,6 +16,12 @@ Install applications if need it.
 
 ```sudo apt-get install ncdu zenity notify-send unoconv meld```
 
+### Where to store icons
+
+I prefer to keep all of the icons in my home directory: ~/.icons
+
+So, you can do as you like and store them anywhere.
+
 ### Thunar actions variables
 
 %f	The path to the first selected file
