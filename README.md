@@ -16,7 +16,7 @@ Install applications if need it.
 
 ```sudo apt-get install ncdu zenity notify-send unoconv meld```
 
-## About Thunar actions variables
+### Thunar actions variables
 
 %f	The path to the first selected file
 
@@ -29,3 +29,7 @@ Install applications if need it.
 %n	The first selected filename, without the path
 
 %N	All the selected filenames, without paths
+
+## Contributing
+
+Anyone can contribute to improve or fix bugs in scripts of this Pack, to do so you can either report an issue (a bug, an idea...) or fork the repository, perform modifications to your fork then request a merge.
