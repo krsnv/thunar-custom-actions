@@ -41,3 +41,4 @@ So, you can do as you like and store them anywhere.
 Anyone can contribute to improve or fix bugs in scripts of this Pack, to do so 
 you can either report an issue (a bug, an idea...) or fork the repository, 
 perform modifications to your fork then request a merge.
+
